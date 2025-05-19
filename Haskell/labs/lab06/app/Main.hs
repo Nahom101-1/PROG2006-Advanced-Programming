@@ -5,6 +5,7 @@ import Decoder
 -- main function to read input and decode the message
 main :: IO ()
 main = do 
+    putStrLn "Enter the numbers to decode the message"
     input <- getLine  -- read a line of input
     let numbers = map read (words input) :: [Int] -- convert input to a list of integers
     case decodeMessage numbers of -- decode the message
