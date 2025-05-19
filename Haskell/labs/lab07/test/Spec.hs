@@ -1,2 +1,8 @@
+module Main (main) where
+
+import Test.DocTest
+
+-- | Main function to run doctests on the specified modules.
 main :: IO ()
-main = putStrLn "Test suite not yet implemented"
+main = doctest
+  [ "src/Lib.hs"]
