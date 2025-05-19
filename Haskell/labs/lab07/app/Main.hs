@@ -7,5 +7,5 @@ import Lib (countScore)
 main :: IO ()
 main = getContents >>= putStrLn . ("The total score is: " ++) . show . countScore
 
-
+-- to see the result
 -- stack exec lab07-exe < data.txt
