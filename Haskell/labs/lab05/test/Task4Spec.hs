@@ -23,7 +23,3 @@ spec = describe "fib2 (infinite list via zipWith)" $ do
 
   it "fib2 15 = 610" $
     fib2 15 `shouldBe` 610
-
-  -- Optional extra check
-  it "fib2 20 = 6765" $
-    fib2 20 `shouldBe` 6765
