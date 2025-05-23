@@ -1,34 +1,49 @@
-# Lab 04: Haskell Age
-## Tasks
+# Haskell Lab 04: Functional Programming Basics
 
-1. **Task 1: Reverse a List (`mreverse`)**  
-   Implement `mreverse :: [a] -> [a]` without using the built-in `reverse`.  
-   - Uses an accumulator for O(n) performance  
-   - Includes inline doctests
+This project demonstrates fundamental Haskell programming concepts and techniques through a series of tasks. It includes implementations of list operations, interactive programs, and data processing, along with comprehensive test coverage using HSpec and Doctest.
 
-2. **Task 2: Multiplication Table (`mulTable`)**  
-   Implement `mulTable :: Int -> IO ()` that prints an n×n multiplication table, with each entry right-aligned in 3 character slots.  
-   - Uses `printf` for padding  
-   - Outputs rows separated by newlines
 
-3. **Task 3: Oldest Students Count (`countOldest`)**  
-   Implement `countOldest :: String -> Int` that, given a block of lines `"Name Surname Age"`, returns how many students share the maximum age.  
-   - Parses input with `lines` and `words` only  
-   - Single traversal (fold) for O(n) time  
-   - Malformed or empty lines default to age `0`
+## Tasks Overview
+
+### Task 1: Reverse a List
+Implements a custom function `mreverse` to reverse a list without using the built-in `reverse` function. Includes property-based testing with QuickCheck.
+
+### Task 2: Multiplication Table
+Generates a formatted multiplication table for a given size using the `mulTable` function. Includes custom padding for alignment.
+
+### Task 3: Oldest Students Count
+Processes a dataset of students to find and count the oldest students using the `countOldest` function. Demonstrates efficient data traversal and parsing.
+
+---
+
+## Features
+
+- **Type Safety**: Demonstrates the use of type-safe functions and Haskell's strong type system.
+- **Functional Patterns**: Implements recursion, list processing, and higher-order functions.
+- **Testing**: Comprehensive test coverage using:
+  - **HSpec**: Unit tests for all tasks.
+  - **Doctest**: Inline examples embedded in Haddock comments.
+
+---
 
 ## Requirements
 
-- **GHC** ≥ 9.0  
-- **Stack** (https://docs.haskellstack.org/)
+- **GHC** ≥ 9.0
+- **Stack**: Install [Stack](https://docs.haskellstack.org/).
 
+---
 
+## How to Run
 
-## How to Build & Test
-
-From the `lab04/` directory, run:
-
+### Build the Project
 ```bash
-stack setup
 stack build
+
+### Run the Main Program
+The main program includes interactive prompts to test all the implemented lab tasks.
+```bash
+stack exec lab04-exe
+
+### Run test
+```bash
 stack test

@@ -26,7 +26,7 @@ countOldest = snd . foldr step (0, 0) . map parseAge . lines
     parseAge line =
       case words line of
         (_:_:ageStr:_) -> read ageStr
-        _               -> 0  -- ignore malformed lines
+        _               -> 0  
 
     -- accumulator: (currentMaxAge, countOfMax)
     step :: Int -> (Int, Int) -> (Int, Int)
