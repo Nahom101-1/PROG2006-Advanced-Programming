@@ -42,3 +42,7 @@ This project demonstrates fundamental Haskell programming concepts and technique
 1. **Build the project**  
    ```sh
    stack build
+2. **Run the main program**  
+   The main program includes a menu that allows you to test all the implemented lab tasks interactively.  
+   ```sh
+   stack exec lab03-exe
