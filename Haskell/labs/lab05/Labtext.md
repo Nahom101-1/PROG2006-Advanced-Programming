@@ -40,14 +40,12 @@ Rewrites the infinite Fibonacci sequence using the `zipWith` function. Explores 
 
 ## How to Run
 
-### Build the Project
-```bash
-stack build
-
-### Run the Main Program
-```bash
-stack exec lab05-exe
-
-### Run test
-```bash
-stack test
+1. **Build the project**:
+   ```bash
+   stack build
+2. **Build the project**:
+   ```bash
+   stack exec lab05-exe
+3. **Testing**:
+   ```bash
+   stack test
