@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROG2006 Course Announcements</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-bullhorn"></i> PROG2006 Announcements</h1>
+            <p class="tagline">Stay informed with the latest course updates and news.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="announcements-section">
+                <h2>Current Announcements</h2>
+                <div class="filter-controls">
+                    <input type="text" id="searchInput" placeholder="Search announcements...">
+                    <button id="clearSearch">Clear</button>
+                </div>
+                <div id="announcements-list" class="grid-container">
+                    <p class="loading-message">Loading announcements...</p> </div>
+                <div class="actions">
+                    <a href="/announcements?format=json" class="button button-secondary" target="_blank">View Raw JSON Data</a>
+                    <button id="scrollToTop" class="button"><i class="fas fa-arrow-up"></i> Top</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PROG2006. All rights reserved.</p>
+            <p>Data provided by <a href="https://git.gvk.idi.ntnu.no/" target="_blank" rel="noopener noreferrer">GitLab API</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
